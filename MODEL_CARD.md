@@ -19,9 +19,9 @@
 ## Результаты оценки (Metrics)
 Оценка проводилась на подвыборке из 100 записей датасета `deepvk/mmbench-ru` (сплит `dev`) с использованием кастомного скрипта парсинга ответов (извлечение буквы A, B, C или D).
 
-- **Базовая модель (zero-shot, 4-bit):** [ВСТАВЬТЕ ЧИСЛО ИЗ evaluation_results.json: baseline_accuracy_percent]% Accuracy ([ВСТАВЬТЕ ЧИСЛО: baseline_correct]/100)
-- **Дообученная модель (с LoRA, merged):** [ВСТАВЬТЕ ЧИСЛО ИЗ evaluation_results.json: finetuned_accuracy_percent]% Accuracy ([ВСТАВЬТЕ ЧИСЛО: finetuned_correct]/100)
-- **Разница (Improvement):** [ВСТАВЬТЕ ЧИСЛО ИЗ evaluation_results.json: improvement_percent]%
+- **Базовая модель (zero-shot, 4-bit):** 58%
+- **Дообученная модель (с LoRA, merged):** 56%
+- **Разница (Improvement):** -2%
 
 ## Ограничения и рекомендации по использованию
 1. **Масштаб данных:** Модель дообучалась на ограниченной подвыборке (1000 примеров). Она демонстрирует адаптацию к формату русских инструкций, но подвержена риску катастрофического забывания (catastrophic forgetting) общих знаний.
